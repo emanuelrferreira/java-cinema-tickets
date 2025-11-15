@@ -24,7 +24,7 @@ public class CinemaAPP {
 
         //output
         totalPrice=c.getTotalPrice();
-        System.out.println("Total to be pay is: "+totalPrice);
+        System.out.println("Total price to be paid: €" + totalPrice);
         keyboard.close();
     }
 }

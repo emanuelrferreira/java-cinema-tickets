@@ -3,7 +3,7 @@ public class CinemaAPP {
     public static void main(String[] args) {
         //vars
         int userAge;
-        int ticketsNum;
+        int numberOfTickets;
         int totalPrice;
 
         //objs
@@ -16,8 +16,8 @@ public class CinemaAPP {
         c.setUserAge(userAge);
 
         System.out.println("How many tickets?");
-        ticketsNum=keyboard.nextInt();
-        c.setTicketsNum(ticketsNum);
+        numberOfTickets=keyboard.nextInt();
+        c.setNumberOfTickets(numberOfTickets);
         
         //process
         c.computeTotalPrice();

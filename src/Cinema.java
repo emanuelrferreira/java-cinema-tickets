@@ -1,13 +1,13 @@
 public class Cinema {
     //vars - data members
     private int userAge;
-    private int ticketsNum;
+    private int numberOfTickets;
     private int totalPrice;
 
     // constructor - default 
     public Cinema(){
         userAge=0;
-        ticketsNum=0;
+        numberOfTickets=0;
         totalPrice=0;
     }
 
@@ -16,16 +16,16 @@ public class Cinema {
         this.userAge=userAge;
     }
 
-    public void setTicketsNum(int ticketsNum){
-        this.ticketsNum=ticketsNum;
+    public void setNumberOfTickets(int numberOfTickets){
+        this.numberOfTickets=numberOfTickets;
     }
 
     //computes total price based on age discount rules
     public void computeTotalPrice(){
         if (userAge>=18){
-            totalPrice=ticketsNum*15; // adult price
+            totalPrice=numberOfTickets*15; // adult price
         } else {
-            totalPrice=ticketsNum*10; // underage price
+            totalPrice=numberOfTickets*10; // underage price
         }
     }
 

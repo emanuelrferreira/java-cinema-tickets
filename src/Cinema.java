@@ -20,12 +20,12 @@ public class Cinema {
         this.ticketsNum=ticketsNum;
     }
 
-    //compute
+    //computes total price based on age discount rules
     public void computeTotalPrice(){
         if (userAge>=18){
-            totalPrice=ticketsNum*15;
+            totalPrice=ticketsNum*15; // adult price
         } else {
-            totalPrice=ticketsNum*10;
+            totalPrice=ticketsNum*10; // underage price
         }
     }
 
